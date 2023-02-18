@@ -3,8 +3,10 @@
    padding: 0;
    box-sizing: border-box;
 }
-body {
+body,
+html {
    font-family: "Poppins", sans-serif;
+   scroll-behavior: smooth;
 }
 a {
    text-decoration: none;
@@ -153,6 +155,78 @@ header .nav-logo span {
 @media screen and (max-width: 540px) {
    .hero h1 {
       font-size: 2.5rem;
+   }
+}
+
+/* styling about section */
+.about .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+}
+.about .content {
+   max-width: 600px;
+   display: grid;
+   gap: 1rem;
+}
+.about .content h2 {
+   font-size: 2rem;
+   text-transform: capitalize;
+   margin-bottom: 2rem;
+}
+.about .content h2 span {
+   color: #7700ff;
+}
+.about .content .btn {
+   margin-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+   .about {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+   }
+   .about .image {
+      display: none;
+   }
+}
+
+/* styling skills */
+.skills .container {
+   display: grid;
+   text-align: center;
+   gap: 2rem;
+   margin-top: 4rem;
+   margin-bottom: 4rem;
+}
+.skills h2 {
+   font-size: 2rem;
+   font-weight: 700;
+   border-bottom: 5px solid #7700ff;
+   width: fit-content;
+   margin: auto;
+   padding-bottom: 1rem;
+}
+.skills .skills-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem 2rem;
+   flex-wrap: wrap;
+   margin: auto;
+}
+.skills .skills-wrapper span {
+   font-size: 2rem;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: 300;
+}
+.skills .skills-wrapper i {
+   font-size: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+   .skills .skills-wrapper span {
+      font-size: 1.5rem;
    }
 }
 
